@@ -3,9 +3,10 @@
  * 
  * 
  * -------------RULES YOU SHOULD KNOW--------------------
- * Java don't support static constructor.
- * In Static method only static variable can be initilized and used.
- * this and super cannot be used in static context.
+ * @ Java don't support static constructor.
+ * @ In Static method only static variable can be initilized and used.
+ * @ this and super cannot be used in static context.
+ * @ Static class concept is used with nested class...
  * 
  */
 package com.OOPs;
@@ -15,7 +16,7 @@ public class Static {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub'
 		Static1 obj=new Static1(1,"Ashish Khati");
-		Static1.method1("Government Inter Collage");
+		Static1.method1("Government Polytechnic Dehradun");
 		obj.method();
 		
 
@@ -29,7 +30,7 @@ class Static1
 	int id;					//instance variable---->need object to access
 	String name;			//instance variable
 	static String collage;    //Static variable----->directly access using class.no need to create object to access static variable
-	/*static 
+	/*static     			//This is static block. if static block and static method are used in class to initilize static variable then compiler give preference to static block....
 	{
 		collage="Government Polytechnic Dehradun";
 	}*/
@@ -52,3 +53,6 @@ class Static1
 		collage=c;
 	}
 }
+
+
+

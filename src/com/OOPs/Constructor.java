@@ -2,6 +2,10 @@
  * This is constructor topic 
  * where Rectangle class variable are initialize by its constructor 
  * in other class named override is covering concept of constructor overloading 
+ * 
+ * 
+ * ---------------------IMPORTANT CONCEPTS-----------------
+ * Java constructor can not be static,abstract,final,native or strictfp
  */
 package com.OOPs;
 import java.util.Scanner;

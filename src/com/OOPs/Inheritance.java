@@ -33,13 +33,10 @@ public class Inheritance {
 		
 		
 		//Multilevel Inheritance Object creation
-	//	Grandpa gp=new Grandpa("Mr.Dayal Singh Khati","Manda",100000000f);
-	//	Father f=new Father("Mr.Dayal Singh Khati","Manda",100000000f,"Army Man");
+	
 		Son s=new Son("Mr.Dayal Singh Khati","Manda",50000000f);
 		s.getSonData("Ashish Khati","Gaja",1000000000f,"Software Engineer","B.Tech in Computer Sciene","Shobhit Nautiyal");
 		s.getFatherData("Mr.Vijay Singh Khati","Rishikesh",20000000f,"Chef");
-	//	f.showData();
-	//	f.showGrandpa();
 		s.showGrandpa();
 		s.showFather();
 		s.sonData();

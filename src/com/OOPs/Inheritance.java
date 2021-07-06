@@ -22,11 +22,13 @@ public class Inheritance {
 		SquareArea sa=new SquareArea();
 		sa.sqrArea();*/
 
-		
+
+		      //	Single inheritance Example2 object creation	
 		
 	/*	ClassRoom r=new ClassRoom(10,10,10);
 		r.area();
-		r.volume();*/
+		r.volume();
+	*/
 		
 		
 		
@@ -34,12 +36,23 @@ public class Inheritance {
 		
 		//Multilevel Inheritance Object creation
 	
-		Son s=new Son("Mr.Dayal Singh Khati","Manda",50000000f);
+	/*	Son s=new Son("Mr.Dayal Singh Khati","Manda",50000000f);
 		s.getSonData("Ashish Khati","Gaja",1000000000f,"Software Engineer","B.Tech in Computer Sciene","Shobhit Nautiyal");
 		s.getFatherData("Mr.Vijay Singh Khati","Rishikesh",20000000f,"Chef");
 		s.showGrandpa();
 		s.showFather();
 		s.sonData();
+	*/	
+		
+		//Multilevel Inheritance Example 2  Object creation
+		
+		C c=new C();
+		c.getDataBC(1, "A class ");
+		c.getDataB(2, "B class", "GPD", 20);
+		c.getDataC(1, "C class", "Government Polytechnic Dehradun", 19, 100);
+		c.showDataA();
+		c.showDataB();
+		c.showDataC();
 	}
 
 }
@@ -245,5 +258,78 @@ class Son extends Father
 		System.out.println("This is Son class");
 		System.out.printf("Name : %s\nWork: %s\nSalary is: %f\nHouse in :%s\nFriend : %s\nStudy : %s ",name,work,salary,house,friend,study);
 		System.out.println("\n--------------------------------------------------------\n");
+	}
+}
+
+
+class A
+{
+	int id;
+	String name;
+	void getDataA(int i,String n)
+	{
+		id=i;
+		name=n;
+	}
+	void showDataA()
+	{
+		System.out.println("\n---------------------------------\n");
+		System.out.println("This is A class");
+		System.out.printf("ID is: %d\n Name is: %s",id,name);
+		System.out.println("\n---------------------------------\n");
+	}
+}
+class B extends A
+{
+	int id;
+	String name;
+	String collage;
+	int age;
+	public void getDataAB(int i,String n)
+	{
+		getDataA(i,n);
+		
+	}
+	public void getDataB(int i,String n,String c,int a)
+	{
+		id=i;
+		name=n;
+		collage=c;
+		age=a;
+	}
+	void showDataB()
+	{
+		System.out.println("\n---------------------------------\n");
+		System.out.println("This is B class");
+		System.out.printf("ID is: %d\n Name is: %s\nCollage is: %s\nAge is: %d",id,name,collage,age);
+		System.out.println("\n---------------------------------\n");
+	}
+	
+}
+class C extends B
+{
+	int id;
+	String name;
+	String collage;
+	int age;
+	int marks;
+	public void getDataBC(int i,String n)
+	{
+		getDataAB(i,n);
+	}
+	public void getDataC(int i,String n,String c,int a,int m)
+	{
+		id=i;
+		name=n;
+		collage=c;
+		age=a;
+		marks=m;
+	}
+	void showDataC()
+	{
+		System.out.println("\n---------------------------------\n");
+		System.out.println("This is C class");
+		System.out.printf("ID is: %d\n Name is: %s\nCollage is: %s\nAge is: %d\nMarks: %d",id,name,collage,age,marks);
+		System.out.println("\n---------------------------------\n");
 	}
 }

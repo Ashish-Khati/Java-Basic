@@ -16,14 +16,14 @@ public class Polymorphism {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	/*	Poly1 p=new Poly1();
+	Poly1 p=new Poly1();
 		p.method();
 		p.sum();
 		p.method(10,30);               //This is the method overloading concept
 		p.sum();
 		p.method(100);
 		p.sum();
-	*/
+	
 		
 		
 		   //Method overriding concept 

@@ -20,8 +20,8 @@ public class Inheritance {
 		CirArea ca=new CirArea();
 		ca.cirArea();
 		SquareArea sa=new SquareArea();
-		sa.sqrArea();*/
-
+		sa.sqrArea();
+*/
 
 		      //	Single inheritance Example2 object creation	
 		
@@ -36,23 +36,23 @@ public class Inheritance {
 		
 		//Multilevel Inheritance Object creation
 	
-	/*	Son s=new Son("Mr.Dayal Singh Khati","Manda",50000000f);
+		Son s=new Son("Mr.Dayal Singh Khati","Manda",50000000f);
 		s.getSonData("Ashish Khati","Gaja",1000000000f,"Software Engineer","B.Tech in Computer Sciene","Shobhit Nautiyal");
 		s.getFatherData("Mr.Vijay Singh Khati","Rishikesh",20000000f,"Chef");
 		s.showGrandpa();
 		s.showFather();
 		s.sonData();
-	*/	
+		
 		
 		//Multilevel Inheritance Example 2  Object creation
 		
-		C c=new C();
+	/*	C c=new C();
 		c.getDataBC(1, "A class ");
 		c.getDataB(2, "B class", "GPD", 20);
 		c.getDataC(1, "C class", "Government Polytechnic Dehradun", 19, 100);
 		c.showDataA();
 		c.showDataB();
-		c.showDataC();
+		c.showDataC();   */
 	}
 
 }

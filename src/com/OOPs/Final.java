@@ -5,7 +5,7 @@
  *  @Final method can't be override by child class.....
  *  @If a class declare as Final then that class can't be inherited....
  *  @Finalize() method work as destructor in java programming language
- *  @Finalize() method  
+ *  @Varargs is used to take different data type data from one argument......
  */
 package com.OOPs;
 
@@ -16,6 +16,8 @@ public class Final {
 		FinalVar2 fv=new FinalVar2();
 		fv.finalVar();
 		fv.method();
+		Varargs v=new Varargs();
+		v.varargs("Ashish Khati",20,"Mr.Vijay Singh Khati", 10000f,'A',true,398495.3543,false);
 
 	}
 
@@ -41,5 +43,16 @@ class FinalVar2 extends FinalVar
 	public void method()
 	{
 		System.out.println("The quick brown fox jumps over the lazy dog. ");
+	}
+}
+
+class Varargs
+{
+	public void varargs(Object... obj )    				//use of methods with varargs
+	{
+		for(Object o:obj)
+		{
+			System.out.println(o);
+		}
 	}
 }

@@ -124,7 +124,7 @@ class TwoDimensionArray
 		System.out.println("Array elements are: ");
 		for(int i=0;i<arr.length;i++)
 		{
-			for(int j=0;j<arr.length;j++)      							//This line is to implement jagged array
+			for(int j=0;j<arr.length;j++)      							// (for(int j=0;j<arr[i].length;j++)) This line is to implement jagged array
 			{
 				System.out.print("\t"+arr[i][j]);
 				}

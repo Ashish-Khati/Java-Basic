@@ -119,8 +119,10 @@ public class StringConcept {
 	 sm.isEmptyMethod();
 	 //lastIndexOf() method concept
 	 sm.lastIndexOfMethod();
-	 */
+	 
+	 //length() method concept
 	 sm.lengthMethod();
+	 */
 
 	}
 
